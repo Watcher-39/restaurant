@@ -1,0 +1,180 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.nav-wrapper{
+  display: flex;
+  justify-content: space-between;
+  background-color: darkgreen;
+  height: 50px;
+}
+
+.name{
+  margin: 5px;
+  padding: 5px;
+}
+
+.nav{
+  display: inline;
+  margin: 10px;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.nav a{
+  color: black;
+  text-decoration: none;
+}
+
+.nav a:hover{
+  color: #3c3c3c;
+}
+
+.showcase{
+  display: flex;
+  position: relative;
+}
+
+.showcase img{
+  width: 100%;
+  height: 250px;
+  opacity: 95%;
+  z-index: -2;
+}
+
+.showcase-wrapper{
+  position: absolute;
+}
+
+.header{
+  color: black;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.info{
+  color: black;
+  padding: 20px;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.menue-wrapper{
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: teal;
+}
+
+.menu-items{
+  position: relative;
+  justify-items: flex-start;
+  align-items: flex-start;
+}
+
+.menu-items img{
+  height: 600px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.menu-item{
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;/*align left to right*/
+  align-items: center;/*align top to bottom*/
+  height: 600px;
+  text-align: center;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+h3, p{
+  color: darkblue;
+}
+
+.about-wrapper{
+  display: flex;
+  background-color: slategray;
+}
+
+.about-wrapper img{
+  height: 608px;
+  width: 500px;
+}
+
+.about{
+  margin: 10px;
+  padding: 5px;
+  font-weight: 200;
+  font-size: large;
+}
+
+
+.about{
+  justify-items: end;
+  align-items: center;
+}
+
+.about-me,
+.my-buisness{
+  color: black;
+}
+
+.img-darken{
+  transition: 1s;
+  filter: brightness(10%);
+}
+
+@media (max-width: 950px){
+  .header,
+  .menu-item{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .info{
+    margin: 0;
+    padding: 0;
+  }
+
+  .about-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+  }
+
+  @media (max-width: 750px) {
+    .info{
+      text-align: center;
+      align-content: center;
+      justify-content: center;
+      margin: 10px;
+    }
+  }
+}
